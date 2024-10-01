@@ -19,7 +19,6 @@ or implied.
 
 # Export/Set the environment variables
 from SSEAPI import SSEAPI
-from termcolor import colored
 from email.message import EmailMessage
 import smtplib
 import datetime
