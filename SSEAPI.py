@@ -16,9 +16,6 @@ or implied.
 """
 
 import requests
-from termcolor import colored
-import http.client as http_client
-import logging
 from oauthlib.oauth2 import BackendApplicationClient
 from oauthlib.oauth2 import TokenExpiredError
 from requests_oauthlib import OAuth2Session

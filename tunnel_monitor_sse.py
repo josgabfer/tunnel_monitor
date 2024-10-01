@@ -27,7 +27,7 @@ client_id = os.environ.get('API_KEY')
 client_secret = os.environ.get('API_SECRET')
 email_address = os.environ.get('EMAIL')
 passw = os.environ.get('PASSWD')
-recipients = ['RECIPIENTS']
+recipients = ['REPLACE_THIS_VALUE_WITH_YOUR_EMAIL_ADDRESS']
 token_url = os.environ.get(
     'TOKEN_URL') or 'https://api.umbrella.com/auth/v2/token'
 
