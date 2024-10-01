@@ -13,6 +13,8 @@ The script alerts on these conditions:
 
 * Python 3.x.x
 * Cisco Secure Access
+* Create an App password for the desired email to send the notification from, save the App Password in the PASSWD environment variable
+
 
 ## Before You Begin
 
