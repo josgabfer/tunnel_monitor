@@ -14,6 +14,7 @@ The script alerts on these conditions:
 * Python 3.x.x
 * Cisco Secure Access
 * Create an App password for the desired email to send the notification from, save the App Password in the PASSWD environment variable
+* Modify the recipients variable in the tunnel_monitor_sse.py and enter the desired email address to send the notifications from
 
 
 ## Before You Begin
