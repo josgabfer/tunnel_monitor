@@ -34,7 +34,7 @@ token_url = os.environ.get(
 def send_email(tunnelInfo):
     """This function will send an alert to the desired recipients"""
     msg = EmailMessage()
-    msg['Subject'] = 'AD Connector Error Found!'
+    msg['Subject'] = 'Network Tunnel Error Found!'
     msg['From'] = email_address
     msg['To'] = recipients
     msg.set_content(
@@ -47,7 +47,7 @@ def send_email(tunnelInfo):
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AD Connector Monitor</title>
+        <title>Network Tunnel Monitor</title>
     </head>
     <body>
         <h1>Tunnel connection error detected at """ + str(datetime.datetime.now()) + """</h1>
@@ -86,7 +86,7 @@ if __name__ == '__main__':
         # Step 1: Create the API client
         sse_api = SSEAPI(token_url, client_id, client_secret)
 
-        # Step 2: Send a request checking for status of the AD Connector
+        # Step 2: Send a request checking for status of the Tunnel Groups
         tunnel_endpoints = 'deployments/v2/networktunnelgroups'
         tunnelComponents = sse_api.ReqGet(tunnel_endpoints).json()
         tunnelData = tunnelComponents["data"]
